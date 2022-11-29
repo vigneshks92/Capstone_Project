@@ -24,19 +24,8 @@ public class ManageProductPageTest extends BaseClass {
 	@Test
 	public void ManageProductTest() throws InterruptedException {
 			
-			String UserNameVal = sheet.getRow(3).getCell(0).getStringCellValue();
-			String PasswordVal = sheet.getRow(3).getCell(1).getStringCellValue();
-			
-			LoginPage login = new LoginPage();
-			login.LoginFunction(UserNameVal,PasswordVal);
-			
-			Thread.sleep(2000);
-			
 			ManageProductPage product = new ManageProductPage();
 			product.ManageProductFunction();
 		}
 	
-
-
-
 }

@@ -20,6 +20,18 @@ public class UserHomePage {
 	
 	//=====================WebElements==========================
 	
+	@FindBy(id = "login")
+	WebElement LoginLink;
+	
+	@FindBy(id = "username")
+	WebElement UserName;
+	
+	@FindBy(id = "password")
+	WebElement Password;
+	
+	@FindBy(xpath = "//*[@value='Login']")
+	WebElement LoginButton;
+	
 	@FindBy(id = "a_Antipyretics")
 	WebElement Antipyretics;
 	
@@ -49,6 +61,26 @@ public class UserHomePage {
 	//=====================Functions===========================
 	
 public void UserHomeFunction() throws InterruptedException {
+	
+	LoginLink.click();
+	test.log(LogStatus.PASS, "Click on Login Link", "Login link clicked successfully");
+	
+	Thread.sleep(2000);
+	
+	UserName.sendKeys("kn@gmail.com");
+	test.log(LogStatus.PASS, "Enter UserName", "UserName entered successfully");
+	
+	Thread.sleep(2000);
+	
+	Password.sendKeys("12345");
+	test.log(LogStatus.PASS, "Enter Password", "Password successfully");
+	
+	Thread.sleep(2000);
+	
+	LoginButton.click();
+	test.log(LogStatus.PASS, "Click on LoginButton", "LoginButton clicked successfully");
+	
+	Thread.sleep(2000);
 		
 	Antipyretics.click();
 	test.log(LogStatus.PASS, "Click on Antipyretics Link", "Antipyretics link clicked successfully");

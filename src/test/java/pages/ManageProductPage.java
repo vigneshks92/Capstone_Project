@@ -21,6 +21,18 @@ public class ManageProductPage {
 	
 	//=====================WebElements==========================
 	
+	@FindBy(id = "login")
+	WebElement LoginLink;
+	
+	@FindBy(id = "username")
+	WebElement UserName;
+	
+	@FindBy(id = "password")
+	WebElement Password;
+	
+	@FindBy(xpath = "//*[@value='Login']")
+	WebElement LoginButton;
+	
 	@FindBy(id = "a_Antipyretics")
 	WebElement Antipyretics;
 	
@@ -81,6 +93,26 @@ public void ManageProductFunction() throws InterruptedException {
 //	test.log(LogStatus.PASS, "Click on Antibiotics Link", "Antibiotics link clicked successfully");
 //	
 //	Thread.sleep(2000);
+	
+	LoginLink.click();
+	test.log(LogStatus.PASS, "Click on Login Link", "Login link clicked successfully");
+	
+	Thread.sleep(2000);
+	
+	UserName.sendKeys("vk@gmail.com");
+	test.log(LogStatus.PASS, "Enter UserName", "UserName entered successfully");
+	
+	Thread.sleep(2000);
+	
+	Password.sendKeys("admin");
+	test.log(LogStatus.PASS, "Enter Password", "Password successfully");
+	
+	Thread.sleep(2000);
+	
+	LoginButton.click();
+	test.log(LogStatus.PASS, "Click on LoginButton", "LoginButton clicked successfully");
+	
+	Thread.sleep(2000);
 		
 	ManageProducts.click();
 	test.log(LogStatus.PASS, "Click on ManageProducts Link", "ManageProducts link clicked successfully");

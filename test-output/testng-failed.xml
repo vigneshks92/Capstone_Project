@@ -3,15 +3,35 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.ValidateProductPageTest">
+      <class name="testcases.LoginPageTest">
         <methods>
+          <include name="LoginValidationTest1"/>
+          <include name="LoginSuccessTest"/>
           <include name="TearDown"/>
-          <include name="ValidateProductTest"/>
+          <include name="LoginValidationTest"/>
+          <include name="SetUp"/>
+          <include name="DataTearDown"/>
+          <include name="DataSetUP"/>
+        </methods>
+      </class> <!-- testcases.LoginPageTest -->
+      <class name="testcases.UserHomePageTest">
+        <methods>
+          <include name="UserHomeTest"/>
+          <include name="TearDown"/>
           <include name="SetUp"/>
           <include name="DataSetUP"/>
           <include name="DataTearDown"/>
         </methods>
-      </class> <!-- testcases.ValidateProductPageTest -->
+      </class> <!-- testcases.UserHomePageTest -->
+      <class name="testcases.ManageProductPageTest">
+        <methods>
+          <include name="ManageProductTest"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="DataTearDown"/>
+          <include name="DataSetUP"/>
+        </methods>
+      </class> <!-- testcases.ManageProductPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

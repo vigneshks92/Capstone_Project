@@ -48,36 +48,52 @@ public class LoginPage {
 	
 	//=====================Functions===========================
 	
-public void LoginFunction(String UserNameVal, String PasswordVal) {
+public void LoginFunction() throws InterruptedException {
 		
 		
 		LoginLink.click();
 		test.log(LogStatus.PASS, "Click on Login Link", "Login link clicked successfully");
 		
-		UserName.sendKeys(UserNameVal);
+		Thread.sleep(2000);
+		
+		UserName.sendKeys("kn@gmail.com");
 		test.log(LogStatus.PASS, "Enter UserName", "UserName entered successfully");
 		
-		Password.sendKeys(PasswordVal);
+		Thread.sleep(2000);
+		
+		Password.sendKeys("12345");
 		test.log(LogStatus.PASS, "Enter Password", "Password successfully");
+		
+		Thread.sleep(2000);
 		
 		LoginButton.click();
 		test.log(LogStatus.PASS, "Click on LoginButton", "LoginButton clicked successfully");
 		
+		Thread.sleep(2000);
+		
 	}
 
-public void LoginValidationFunction(String UserNameVal, String PasswordVal) {
+public void LoginValidationFunction() throws InterruptedException {
 	
 	LoginLink.click();
 	test.log(LogStatus.PASS, "Click on Login Link", "Login link clicked successfully");
 	
-	UserName.sendKeys(UserNameVal);
+	Thread.sleep(2000);
+	
+	UserName.sendKeys("kn@gmail.com");
 	test.log(LogStatus.PASS, "Enter UserName", "UserName entered successfully");
 	
-	Password.sendKeys(PasswordVal);
+	Thread.sleep(2000);
+	
+	Password.sendKeys("1234");
 	test.log(LogStatus.PASS, "Enter Password", "Password successfully");
+	
+	Thread.sleep(2000);
 	
 	LoginButton.click();
 	test.log(LogStatus.PASS, "Click on LoginButton", "LoginButton clicked successfully");
+	
+	Thread.sleep(2000);
 	
 	String ActualValidationMessage = ValidationMessage.getText();
 	test.log(LogStatus.PASS, "Get the Validation Message", "Validation Message captured successfully");
@@ -87,16 +103,22 @@ public void LoginValidationFunction(String UserNameVal, String PasswordVal) {
 	
 }
 
-public void LoginValidationFunction1(String UserNameVal, String PasswordVal) {
+public void LoginValidationFunction1() throws InterruptedException {
 	
 	LoginLink.click();
 	test.log(LogStatus.PASS, "Click on Login Link", "Login link clicked successfully");
 	
-	UserName.sendKeys(UserNameVal);
+	Thread.sleep(2000);
+	
+	UserName.sendKeys("kn@gmail.com");
 	test.log(LogStatus.PASS, "Enter UserName", "UserName entered successfully");
+	
+	Thread.sleep(2000);
 	
 	LoginButton.click();
 	test.log(LogStatus.PASS, "Click on LoginButton", "LoginButton clicked successfully");
+	
+	Thread.sleep(2000);
 	
 	String ActualValidationMessage = ValidationMessage1.getText();
 	test.log(LogStatus.PASS, "Get the Validation Message", "Validation Message captured successfully");
@@ -106,16 +128,22 @@ public void LoginValidationFunction1(String UserNameVal, String PasswordVal) {
 	
 }
 
-public void LoginValidationFunction2() {
+public void LoginValidationFunction2() throws InterruptedException {
 	
 	LoginLink.click();
 	test.log(LogStatus.PASS, "Click on Login Link", "Login link clicked successfully");
 	
+	Thread.sleep(2000);
+	
 	UserName.sendKeys("UserNameCheck");
 	test.log(LogStatus.PASS, "Enter UserName", "UserName entered successfully");
 	
+	Thread.sleep(2000);
+	
 	Password.click();
 	test.log(LogStatus.PASS, "Enter Password", "Password successfully");
+	
+	Thread.sleep(2000);
 	
 	String ActualValidationMessage = ValidationMessage2.getText();
 	test.log(LogStatus.PASS, "Get the Validation Message", "Validation Message captured successfully");

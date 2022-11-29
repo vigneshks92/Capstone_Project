@@ -20,37 +20,28 @@ public class LoginPageTest extends BaseClass {
 	
 	
 	@Test
-	public void LoginSuccessTest() {
-			
-			String UserNameVal = sheet.getRow(1).getCell(0).getStringCellValue();
-			String PasswordVal = sheet.getRow(1).getCell(1).getRawValue();
+	public void LoginSuccessTest() throws InterruptedException {
 			
 			LoginPage login = new LoginPage();
-			login.LoginFunction(UserNameVal,PasswordVal);		
+			login.LoginFunction();	
 		}
 	
 	@Test
-	public void LoginValidationTest() {
-		
-		String UserNameVal = sheet.getRow(2).getCell(0).getStringCellValue();
-		String PasswordVal = sheet.getRow(2).getCell(1).getRawValue();
+	public void LoginValidationTest() throws InterruptedException {
 		
 		LoginPage login = new LoginPage();
-		login.LoginValidationFunction(UserNameVal, PasswordVal);
+		login.LoginValidationFunction();
 	}
 	
 	@Test
-	public void LoginValidationTest1() {
-		
-		String UserNameVal = sheet.getRow(2).getCell(0).getStringCellValue();
-		String PasswordVal = sheet.getRow(2).getCell(1).getRawValue();
+	public void LoginValidationTest1() throws InterruptedException {
 		
 		LoginPage login = new LoginPage();
-		login.LoginValidationFunction1(UserNameVal, PasswordVal);
+		login.LoginValidationFunction1();
 	}
 	
 	@Test
-	public void LoginValidationTest2() {
+	public void LoginValidationTest2() throws InterruptedException {
 		
 		LoginPage login = new LoginPage();
 		login.LoginValidationFunction2();

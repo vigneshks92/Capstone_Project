@@ -1,0 +1,12 @@
+testcases\BaseClass.class
+testcases\LoginPageTest.class
+pages\ViewProductPage.class
+pages\LoginPage.class
+pages\ManageProductPage.class
+pages\ValidateProductPage.class
+pages\UserHomePage.class
+testcases\ViewProductPageTest.class
+testcases\AdminHomePageTest.class
+testcases\ManageProductPageTest.class
+testcases\UserHomePageTest.class
+pages\AdminHomePage.class

@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 53.812 s <<< FAILURE! - in TestSuite
+testcases.ManageProductPageTest.ManageProductTest  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testcases.ManageProductPageTest.ManageProductTest(ManageProductPageTest.java:27)
+
+testcases.ViewProductPageTest.ViewProductTest  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testcases.ViewProductPageTest.ViewProductTest(ViewProductPageTest.java:27)
+
+testcases.AdminHomePageTest.AdminHomeTest  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testcases.AdminHomePageTest.AdminHomeTest(AdminHomePageTest.java:26)
+
+testcases.LoginPageTest.LoginSuccessTest  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testcases.LoginPageTest.LoginSuccessTest(LoginPageTest.java:25)
+
+testcases.LoginPageTest.LoginValidationTest  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testcases.LoginPageTest.LoginValidationTest(LoginPageTest.java:35)
+
+testcases.LoginPageTest.LoginValidationTest1  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testcases.LoginPageTest.LoginValidationTest1(LoginPageTest.java:45)
+
